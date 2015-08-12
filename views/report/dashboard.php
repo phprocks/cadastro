@@ -14,17 +14,7 @@ use yii\web\View;
 
         <?php  echo $this->render('_menu'); ?>
     </div>
-    <div class="col-xs-12 col-sm-6 col-md-9">
-<!--         <div class="row">
-        <div class="col-md-4">
-                <ul class="list-group">
-                  <li class="list-group-item">
-                    <span class="badge">14</span>
-                    Cras justo odio
-                  </li>
-                </ul>
-        </div></div> -->
-                
+    <div class="col-xs-12 col-sm-6 col-md-9">                
     <div class="panel panel-default">
             <div class="panel-heading clearfix">
             <div class="col-xs-2 pull-right">       
@@ -34,7 +24,6 @@ use yii\web\View;
                     ['id' => '2015', 'name' => '2015'],
                     ['id' => '2016', 'name' => '2016'],
                 ];
-                //$result = ArrayHelper::map($array, 'id', 'name');
                 $this->registerJs('var submit = function (val){if (val > 0) {
                     window.location.href = "' . Url::to(['/report/dashboard']) . '&year=" + val;
                 }
@@ -50,11 +39,10 @@ use yii\web\View;
                     'options' => [
                         'credits' => ['enabled' => false],
                         'title' => [
-                            'text' => '',
+                            'text' => 'Quantidade de Solicitações por Mês',
                         ],
                         'colors'=> ['#177c83','#27cdd9'],
                         'xAxis' => [
-                            //'categories' => ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Nov', 'Dez'],
                             'categories' => $m,
                         ],
                         'yAxis' => [

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8abb02b2f5ab899e049d70e958f81c6f",
+    "hash": "f77a1e4ae02feebc9f8f1afdb81a3633",
     "packages": [
         {
             "name": "2amigos/yii2-file-upload-widget",
@@ -781,6 +781,62 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "fxp/composer-asset-plugin",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
+                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
+                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Fxp\\Composer\\AssetPlugin\\FxpAssetPlugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fxp\\Composer\\AssetPlugin\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "François Pluchino",
+                    "email": "francois.pluchino@gmail.com"
+                }
+            ],
+            "description": "NPM/Bower Dependency Manager for Composer",
+            "homepage": "https://github.com/francoispluchino/composer-asset-plugin",
+            "keywords": [
+                "asset",
+                "bower",
+                "composer",
+                "dependency manager",
+                "nodejs",
+                "npm",
+                "package"
+            ],
+            "time": "2015-07-29 12:23:21"
+        },
+        {
             "name": "imagine/imagine",
             "version": "v0.5.0",
             "source": {
@@ -838,12 +894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "04f471e42eb10c3b78a70d1534544e0395cd0412"
+                "reference": "aa2494bced4e3ce5864faf9e92546482076be753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/04f471e42eb10c3b78a70d1534544e0395cd0412",
-                "reference": "04f471e42eb10c3b78a70d1534544e0395cd0412",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/aa2494bced4e3ce5864faf9e92546482076be753",
+                "reference": "aa2494bced4e3ce5864faf9e92546482076be753",
                 "shasum": ""
             },
             "type": "library",
@@ -878,7 +934,7 @@
                 "progress",
                 "upload"
             ],
-            "time": "2015-08-08 05:21:58"
+            "time": "2015-08-12 13:56:47"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
