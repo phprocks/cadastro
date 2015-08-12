@@ -19,7 +19,7 @@ $this->title = 'Solicitações';
 ?>
 <div class="tasks-index">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h2><?= Html::encode($this->title) ?></h2>
     <?php //echo $this->render('_search', ['model' => $searchModel]); 
 
     echo Collapse::widget([
@@ -48,16 +48,15 @@ $this->title = 'Solicitações';
                 }
             },
         'columns' => [
-            //['class' => 'yii\grid\SerialColumn'],
             [
              'attribute' => 'id',
              'enableSorting' => true,
-             'contentOptions'=>['style'=>'width: 6%;text-align:left'],
+             'contentOptions'=>['style'=>'width: 5%;text-align:left'],
             ],
             [
              'attribute' => 'created',
              'enableSorting' => true,
-             'contentOptions'=>['style'=>'width: 8%;text-align:right'],
+             'contentOptions'=>['style'=>'width: 4%;text-align:center'],
              'format' => ['date', 'php:d/m/Y'],
              //'filter' => DatePicker::widget(['language' => 'pt', 'dateFormat' => 'yyyy-MM-dd']),
              //'format' => 'html',
@@ -69,8 +68,8 @@ $this->title = 'Solicitações';
                     return $model->location->nickname;
                     },
              'filter' => ArrayHelper::map(Location::find()->orderBy('nickname')->asArray()->all(), 'id', 'nickname'),
-             'contentOptions'=>['style'=>'width: 6%;text-align:left'],
-            ],          
+             'contentOptions'=>['style'=>'width: 4%;text-align:left'],
+            ],                    
             [
              'attribute' => 'user_id',
              'enableSorting' => true,
@@ -78,8 +77,12 @@ $this->title = 'Solicitações';
                     return $model->user->username;
                     },
              'filter' => ArrayHelper::map(User::find()->orderBy('username')->asArray()->all(), 'id', 'username'),
-             'contentOptions'=>['style'=>'width: 15%;text-align:left'],
+             'contentOptions'=>['style'=>'width: 14%;text-align:center'],
             ],
+            [
+             'attribute' => 'cpf_cnpj',
+             'contentOptions'=>['style'=>'width: 4%;text-align:right'],
+            ],              
             [
              'attribute' => 'typeperson_id',
              'enableSorting' => true,
@@ -107,7 +110,7 @@ $this->title = 'Solicitações';
                     return '<span style="color:'.$model->status->color.'"><i class="fa fa-circle"></i> '.$model->status->name.'</span>';
                     },
              'filter' => ArrayHelper::map(Status::find()->orderBy('name')->asArray()->all(), 'id', 'name'),
-             'contentOptions'=>['style'=>'width: 15%;text-align:left'],
+             'contentOptions'=>['style'=>'width: 14%;text-align:left'],
             ],
             [
                 'attribute' => 'analyst_id',
@@ -116,7 +119,7 @@ $this->title = 'Solicitações';
                 'value' => function ($model) {                      
                     return $model->analyst ? $model->analyst->username : '<span class="text-danger"><em>Nenhum</em></span>';
                 },
-                'contentOptions'=>['style'=>'width: 15%;text-align:left'],
+                'contentOptions'=>['style'=>'width: 8%;text-align:left'],
             ],
             // 'location_id',
             // 'cpf_cnpj',
@@ -131,7 +134,7 @@ $this->title = 'Solicitações';
 
             [
             'class' => 'yii\grid\ActionColumn',
-            'contentOptions'=>['style'=>'width: 5%;text-align:right'],
+            'contentOptions'=>['style'=>'width: 6%;text-align:right'],
             'template' => '{view} {update}',
             //              'buttons' => [
             //      'upload' => function ($url, $model) {

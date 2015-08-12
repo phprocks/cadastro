@@ -40,16 +40,8 @@ $this->title = 'Administração do Sistema';
                 'options' => ['class' =>'nav-pills nav-stacked'], // set this to nav-tab to get tab-styled navigation
             ]);
 	?>
-	
-
-
-
-
-
-	</div>
-	<div class="col-md-7">
 	<h2><i class="fa fa-pie-chart"></i> Informações</h2>
-  <hr/>
+	<hr/>
 <?php
 /* @var $this SiteController */
 
@@ -163,6 +155,32 @@ $percent = (sizeFormat1($ar['size']) * 100 ) / 681392000 ;
         <?php echo $valor."%"; ?>
       </div>
     </div>
+
+
+
+
+
+	</div>
+	<div class="col-md-7">
+	<h2><i class="fa fa-align-justify"></i> Changelog</h2>
+	<hr/>
+[x] Gravar IP (Inclusão ou alteração)</p>
+[x] Alterar checklist com nomes (Lista enviada por E-mail)</p>
+[ ] Incluir opções de filtro para TASKS/INDEX (incluir checkbox para CONCLUÍDO E CANCELADO)</p>
+[x] Alterar caminho da pasta UPLOAD para mesmo nível do www</p>
+[x] Relatórios e gráficos</p>
+[x] Criar área de Administração do sistema</p>
+[x] Upload livre para usuario baseado em uma lista pre definida</p>
+[ ] Limpar pasta upload periodicamente</p>
+[x] Incluir STATUS Cancelado (Solicitante nao podera alterar informações)</p>
+[x] Campo adicional - <code>Escolaridade</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Profissão</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Empresa onde trabalha</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Cargo ocupado</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Telefone do trabalho</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Data de Admissão</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>CPF Conjuge</code> (Obrigatorio exceto PJ)</p>
+[x] Campo adicional - <code>Referencia</code> (Obrigatorio)</p>
 	</div>
 </div>
 

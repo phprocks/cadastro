@@ -1,6 +1,12 @@
 <?php
 
 namespace app\models;
+use app\models\Location;
+use app\models\Files;
+use app\models\Solicitation;
+use app\models\Status;
+use app\models\Typeperson;
+use app\models\Typesolicitation;
 
 use Yii;
 
@@ -15,23 +21,31 @@ use Yii;
  * @property integer $typeperson_id
  * @property integer $typesolicitation_id
  * @property integer $location_id
- * @property string $cpf_cnpj
+ * @property integer $analyst_id
  * @property string $notes
  * @property string $note_analyst
- * @property string $file_cartao_assinatura
- * @property string $file_comprovante_residencia
- * @property string $file_outro_endereco
- * @property string $file_imposto_renda
- * @property string $file_comp_estado_civil
+ * @property string $cpf_cnpj
+ * @property string $scholarity
+ * @property string $occupation
+ * @property string $job_firm
+ * @property string $job_role
+ * @property string $job_phone
+ * @property string $job_admission_date
+ * @property string $spouse_cpf
+ * @property string $reference
+ * @property string $ip
  *
+ * @property TbFiles[] $tbFiles
  * @property TbLocation $location
  * @property TbTypeperson $typeperson
  * @property TbTypesolicitation $typesolicitation
  * @property User $user
  * @property TbStatus $status
  */
-class Tasks extends \yii\db\ActiveRecord
+class Report extends \yii\db\ActiveRecord
 {
+    public $mounth;
+    public $year;
     /**
      * @inheritdoc
      */
@@ -47,10 +61,11 @@ class Tasks extends \yii\db\ActiveRecord
     {
         return [
             [['created', 'updated'], 'safe'],
-            [['user_id', 'typeperson_id', 'location_id', 'analyst_id', 'cpf_cnpj'], 'required'],
-            [['user_id', 'status_id', 'typeperson_id', 'typesolicitation_id', 'location_id'], 'integer'],
-            [['notes', 'note_analyst'], 'string'],
-            [['cpf_cnpj'], 'string', 'max' => 20],
+            [['user_id', 'typeperson_id', 'typesolicitation_id', 'location_id', 'cpf_cnpj'], 'required'],
+            [['user_id', 'status_id', 'typeperson_id', 'typesolicitation_id', 'location_id', 'analyst_id'], 'integer'],
+            [['notes', 'note_analyst', 'reference'], 'string'],
+            [['cpf_cnpj', 'job_phone', 'job_admission_date', 'spouse_cpf', 'ip'], 'string', 'max' => 20],
+            [['scholarity', 'occupation', 'job_firm', 'job_role'], 'string', 'max' => 100]
         ];
     }
 
@@ -61,7 +76,9 @@ class Tasks extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'created' => 'Data',
+            'created' => 'Solicitado em',
+            'start_date' => 'De',
+            'end_date' => 'Até',
             'updated' => 'Alterado em',
             'user_id' => 'Solicitante',
             'status_id' => 'Situação',
@@ -81,7 +98,16 @@ class Tasks extends \yii\db\ActiveRecord
             'job_admission_date' => 'Data de Admissão',
             'spouse_cpf' => 'CPF Conjuge',
             'reference' => 'Referencia',
+            'ip' => 'IP',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTbFiles()
+    {
+        return $this->hasMany(Files::className(), ['solicitation_id' => 'id']);
     }
 
     /**
@@ -121,7 +147,7 @@ class Tasks extends \yii\db\ActiveRecord
     {
         $user = Yii::$app->getModule("user")->model("User");
         return $this->hasOne($user::className(), ['id' => 'analyst_id']);
-    }
+    }    
 
     /**
      * @return \yii\db\ActiveQuery

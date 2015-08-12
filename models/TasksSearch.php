@@ -74,7 +74,9 @@ class TasksSearch extends Tasks
             'typeperson_id' => $this->typeperson_id,
             'typesolicitation_id' => $this->typesolicitation_id,
             'location_id' => $this->location_id,
+            //'cpf_cnpj'=> $this->cpf_cnpj,
         ]);
+        $query->andFilterWhere(['like', 'cpf_cnpj', $this->cpf_cnpj]);
 
         // $query->andFilterWhere(['like', 'cpf_cnpj', $this->cpf_cnpj])
         //     ->andFilterWhere(['like', 'notes', $this->notes])

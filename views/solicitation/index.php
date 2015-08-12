@@ -114,18 +114,20 @@ $this->title = 'Acompanhar Solicitações';
             ],
             [
             'class' => 'yii\grid\ActionColumn',
-            'contentOptions'=>['style'=>'width: 10%;text-align:left'],
+            'contentOptions'=>['style'=>'width: 10%;text-align:right'],
             'template' => '{view} {update}',
                 'buttons' => [
-                    // 'view' => function ($url, $model) {
-                    //     return $model->status_id <> 98 ? Html::a('<span class="glyphicon glyphicon-eye-open" ></span>', $url, [
-                    //                 'title' => 'Visualizar',
-                    //     ]): '';
-                    // },
+                    'view' => function ($url, $model) {
+                        return Html::a('<span class="glyphicon glyphicon-eye-open" ></span>', $url, [
+                                    'title' => 'Visualizar',
+                        ]);
+                    },
                     'update' => function ($url, $model) {
-                        return $model->status_id <> 98 ? Html::a('<span class="glyphicon glyphicon-eye-glyphicon glyphicon-pencil" ></span>', $url, [
+                        return $model->status_id < 98 ? Html::a('<span class="glyphicon glyphicon-pencil" ></span>', $url, [
                                     'title' => 'Alterar',
-                        ]): '';
+                        ]): Html::a('<span class="glyphicon glyphicon-ban-circle" ></span>', "#", [
+                                    'title' => 'Alteração não permitida!',
+                        ]);
                     },
                     'upload' => function ($url, $model) {
                             return $model->status_id <> 98 ?  Html::a('<span class="glyphicon glyphicon-upload" ></span>', $url, [

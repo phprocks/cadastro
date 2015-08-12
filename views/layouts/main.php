@@ -39,7 +39,7 @@ AppAsset::register($this);
                 'items' => [
                     ['label' => '<i class="fa fa-upload"></i> Solicitar Cadastro', 'url' => ['/solicitation/create'], 'visible'=> Yii::$app->user->isGuest,],
                     ['label' => '<i class="fa fa-file-pdf-o"></i> Acompanhar Solicitações', 'url' => ['/solicitation/index'], 'visible'=> Yii::$app->user->isGuest,],
-                    ['label' => '<i class="fa fa-line-chart"></i> Relatórios', 'url' => ['/solicitation/dashboard']],
+                    ['label' => '<i class="fa fa-line-chart"></i> Relatórios', 'url' => ['/report/dashboard']],
                     //['label' => '<i class="fa fa-life-ring"></i> Ajuda', 'url' => ['/site/index']],                    
                     Yii::$app->user->isGuest ?
                     ['label' => '<i class="fa fa-user"></i> Cadastristas', 'url' => ['/tasks/index']] : 
@@ -47,7 +47,7 @@ AppAsset::register($this);
                     'items' => 
                         [
                             ['label' => '<i class="fa fa-briefcase"></i> Solicitações', 'url' => ['/tasks/index']],
-                            //['label' => '<i class="fa fa-briefcase"></i> '.Yii::t('app', 'Profile'), 'url' => ['/user/profile']],
+                            ['label' => '<i class="fa fa-key"></i> Alterar Senha', 'url' => ['/user/account']],
                             //'<li class="divider"></li>',
                             ['label' => '<i class="fa fa-unlock"></i> Sair',
                                 'url' => ['/user/logout'],
@@ -73,7 +73,7 @@ AppAsset::register($this);
     </div>
 
     <footer class="footer">
-        <div class="container" align="center">Apoio Cadastro - Versão 1.1 - &copy; Sicoob Crediriodoce - Tecnologia da Informação - <?= date('Y') ?> - <?php echo Html::a('Administração do sistema', ['/site/administration']);?></p></div>
+        <div class="container" align="center">Apoio Cadastro - Versão 1.3 - &copy; Sicoob Crediriodoce - Tecnologia da Informação - <?= date('Y') ?> - <?php echo Html::a('Administração do sistema', ['/site/administration']);?></p></div>
     </footer>
 
 <?php $this->endBody() ?>
