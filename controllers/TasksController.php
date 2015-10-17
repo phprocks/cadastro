@@ -108,11 +108,6 @@ class TasksController extends Controller
 
         $model->analyst_id = Yii::$app->user->identity->id;  
 
-   
-            $model->closed = date('Y-m-d');
-
-
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index']);
         } else {

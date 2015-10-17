@@ -35,6 +35,16 @@ class Tasks extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public function beforeSave($insert)
+    {
+        // get closed date
+        if($this->status_id == 99){
+            $this->closed = date('Y-m-d');
+        } 
+ 
+        return parent::beforeSave($insert);
+    }
+
     public static function tableName()
     {
         return 'tb_solicitation';

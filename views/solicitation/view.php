@@ -50,8 +50,13 @@ $this->title = "Solicitação #".$model->id;
               'label' => 'Situação',
               'format' => 'raw',
               'value' => '<span style="color:'.$model->status->color.'"><i class="fa fa-circle"></i> '.$model->status->name.'</span>',
-            ],    
-            'closed',        
+            ],     
+            [ 
+              'label' => 'Concluído em',
+              'format' => 'raw',
+              'value' => date("d/m/Y",  strtotime($model->closed)),
+              'visible' => $model->closed <> null ? true : false,
+            ],                  
             [ 
               'label' => 'Tipo',
               'format' => 'raw',

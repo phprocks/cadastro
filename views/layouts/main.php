@@ -73,7 +73,7 @@ AppAsset::register($this);
     </div>
 
     <footer class="footer">
-        <div class="container" align="center">Apoio Cadastro - Versão 1.3 - &copy; Sicoob Crediriodoce - Tecnologia da Informação - <?= date('Y') ?> - <?php echo Html::a('Administração do sistema', ['/site/administration']);?></p></div>
+        <div class="container" align="center">Apoio Cadastro - Versão 1.5 - &copy; Sicoob Crediriodoce - Tecnologia da Informação - <?= date('Y') ?> - <?php echo Html::a('Administração do sistema', ['/site/administration']);?></p></div>
     </footer>
 
 <?php $this->endBody() ?>
