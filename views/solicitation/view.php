@@ -39,7 +39,7 @@ $this->title = "Solicitação #".$model->id;
             [ 
               'label' => 'Solicitado em',
               'format' => 'raw',
-              'value' => $model->updated <> '' ? date("d/m/Y",  strtotime($model->created))." <em>(Alterado em ".date("d/m/Y",  strtotime($model->updated)).")</em>"."<span class=\"text-muted pull-right\"><i class=\"fa fa-desktop\"></i> ".$model->ip."</span>" : date("d/m/Y",  strtotime($model->created))."<span class=\"text-muted pull-right\"><i class=\"fa fa-desktop\"></i> ".$model->ip."</span>",
+              'value' => $model->updated <> '' ? date("d/m/Y",  strtotime($model->created))." <em>(Última alteração em ".date("d/m/Y",  strtotime($model->updated)).")</em>"."<span class=\"text-muted pull-right\"><i class=\"fa fa-desktop\"></i> ".$model->ip."</span>" : date("d/m/Y",  strtotime($model->created))."<span class=\"text-muted pull-right\"><i class=\"fa fa-desktop\"></i> ".$model->ip."</span>",
             ],
             [ 
               'label' => 'Solicitado por',
@@ -47,14 +47,15 @@ $this->title = "Solicitação #".$model->id;
               'value' => $model->user->username." <em>(".$model->location->fullname.")</em>",
             ],
             [ 
-              'label' => 'Tipo',
-              'format' => 'raw',
-              'value' => $model->typeperson->name." / ".$model->typesolicitation->name,
-            ],
-            [ 
               'label' => 'Situação',
               'format' => 'raw',
               'value' => '<span style="color:'.$model->status->color.'"><i class="fa fa-circle"></i> '.$model->status->name.'</span>',
+            ],    
+            'closed',        
+            [ 
+              'label' => 'Tipo',
+              'format' => 'raw',
+              'value' => $model->typeperson->name." / ".$model->typesolicitation->name,
             ],
             //'user.username',
             //'typeperson.name',

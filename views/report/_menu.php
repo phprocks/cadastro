@@ -31,7 +31,7 @@
                         'url'     => ['/report/by_status'],
                     ],     
                     [
-                        'label'   => 'Quantidade x Tipo',
+                        'label'   => 'Situação x Tipo',
                         'url'     => ['/report/by_type'],
                     ],                                                       
                 ],

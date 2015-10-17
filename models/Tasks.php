@@ -46,7 +46,7 @@ class Tasks extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['created', 'updated'], 'safe'],
+            [['created', 'updated', 'closed'], 'safe'],
             [['user_id', 'typeperson_id', 'location_id', 'analyst_id', 'cpf_cnpj'], 'required'],
             [['user_id', 'status_id', 'typeperson_id', 'typesolicitation_id', 'location_id'], 'integer'],
             [['notes', 'note_analyst'], 'string'],
@@ -63,6 +63,7 @@ class Tasks extends \yii\db\ActiveRecord
             'id' => 'ID',
             'created' => 'Data',
             'updated' => 'Alterado em',
+            'closed' => 'Finalizado em',
             'user_id' => 'Solicitante',
             'status_id' => 'Situação',
             'location_id' => 'Local',

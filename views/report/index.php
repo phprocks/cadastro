@@ -15,6 +15,7 @@ use app\models\Status;
 <h2>Personalizado</h2>
         <hr/>
     <div class="col-xs-6 col-md-3">
+
         <?php  echo $this->render('_menu'); ?>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-9">
@@ -22,6 +23,7 @@ use app\models\Status;
     <hr/>
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
+        //'filterModel' => $searchModel,
         'tableOptions' => ['class'=>'table table-condensed'],
         'emptyText'    => '</br><p class="text-danger">Nenhuma solicitação encontrada!</p>',   
         'summary' => "<p class=\"text-primary \">Quantidade de solicitações encontradas: <span class=\"badge\">{totalCount}</span></p><hr/>",        

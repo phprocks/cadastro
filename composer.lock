@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "f77a1e4ae02feebc9f8f1afdb81a3633",
+    "content-hash": "5e5851757a78bc2a10011f44ac1e71d6",
     "packages": [
         {
             "name": "2amigos/yii2-file-upload-widget",
@@ -359,16 +360,16 @@
         },
         {
             "name": "bower-asset/blueimp-load-image",
-            "version": "1.13.1",
+            "version": "1.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blueimp/JavaScript-Load-Image.git",
-                "reference": "32808581869db984cddb6a974fb3394d898428e6"
+                "reference": "464fa505204e2a6592805e799a4b5f63578bea09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/32808581869db984cddb6a974fb3394d898428e6",
-                "reference": "32808581869db984cddb6a974fb3394d898428e6",
+                "url": "https://api.github.com/repos/blueimp/JavaScript-Load-Image/zipball/464fa505204e2a6592805e799a4b5f63578bea09",
+                "reference": "464fa505204e2a6592805e799a4b5f63578bea09",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -782,16 +783,16 @@
         },
         {
             "name": "fxp/composer-asset-plugin",
-            "version": "v1.0.3",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/francoispluchino/composer-asset-plugin.git",
-                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde"
+                "reference": "8e22c18bbe6a5b7831a9b8488e02b85398048c04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
-                "reference": "c2b0406ac19e9ea2d9556987e827d4e7f6924fde",
+                "url": "https://api.github.com/repos/francoispluchino/composer-asset-plugin/zipball/8e22c18bbe6a5b7831a9b8488e02b85398048c04",
+                "reference": "8e22c18bbe6a5b7831a9b8488e02b85398048c04",
                 "shasum": ""
             },
             "require": {
@@ -805,7 +806,7 @@
             "extra": {
                 "class": "Fxp\\Composer\\AssetPlugin\\FxpAssetPlugin",
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1-dev"
                 }
             },
             "autoload": {
@@ -834,7 +835,7 @@
                 "npm",
                 "package"
             ],
-            "time": "2015-07-29 12:23:21"
+            "time": "2015-10-17 09:47:56"
         },
         {
             "name": "imagine/imagine",
@@ -894,12 +895,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "aa2494bced4e3ce5864faf9e92546482076be753"
+                "reference": "3457816dce40bc21cd0d34fb4d6a3ed5d3d1598a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/aa2494bced4e3ce5864faf9e92546482076be753",
-                "reference": "aa2494bced4e3ce5864faf9e92546482076be753",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/3457816dce40bc21cd0d34fb4d6a3ed5d3d1598a",
+                "reference": "3457816dce40bc21cd0d34fb4d6a3ed5d3d1598a",
                 "shasum": ""
             },
             "type": "library",
@@ -934,20 +935,20 @@
                 "progress",
                 "upload"
             ],
-            "time": "2015-08-12 13:56:47"
+            "time": "2015-10-09 09:23:08"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
-            "version": "v3.5.3",
+            "version": "v3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-star-rating.git",
-                "reference": "bd9c52db6ac71cb270620c1aee601d142ab2cc00"
+                "reference": "987777ee21a599bebbc545c743063fcee9833842"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/bd9c52db6ac71cb270620c1aee601d142ab2cc00",
-                "reference": "bd9c52db6ac71cb270620c1aee601d142ab2cc00",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-star-rating/zipball/987777ee21a599bebbc545c743063fcee9833842",
+                "reference": "987777ee21a599bebbc545c743063fcee9833842",
                 "shasum": ""
             },
             "type": "library",
@@ -975,7 +976,7 @@
                 "jquery",
                 "star"
             ],
-            "time": "2015-06-18 14:42:46"
+            "time": "2015-09-21 09:06:33"
         },
         {
             "name": "kartik-v/dependent-dropdown",
@@ -1659,16 +1660,16 @@
         },
         {
             "name": "kartik-v/yii2-widget-select2",
-            "version": "v2.0.2",
+            "version": "v2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/yii2-widget-select2.git",
-                "reference": "585e8797d7982e0c9d09370b98b451a028a59439"
+                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/585e8797d7982e0c9d09370b98b451a028a59439",
-                "reference": "585e8797d7982e0c9d09370b98b451a028a59439",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-select2/zipball/e72880e7e8dfc845c112ed7df275bf1c929be6db",
+                "reference": "e72880e7e8dfc845c112ed7df275bf1c929be6db",
                 "shasum": ""
             },
             "require": {
@@ -1703,7 +1704,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-01 15:20:59"
+            "time": "2015-09-12 19:56:48"
         },
         {
             "name": "kartik-v/yii2-widget-sidenav",
@@ -2067,12 +2068,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/miloschuman/yii2-highcharts.git",
-                "reference": "4b3f3a138c99ea475842e3ea4ddeb6784fa82074"
+                "reference": "b251a9e3491f5f18721cc36d36c310047408dfad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/4b3f3a138c99ea475842e3ea4ddeb6784fa82074",
-                "reference": "4b3f3a138c99ea475842e3ea4ddeb6784fa82074",
+                "url": "https://api.github.com/repos/miloschuman/yii2-highcharts/zipball/b251a9e3491f5f18721cc36d36c310047408dfad",
+                "reference": "b251a9e3491f5f18721cc36d36c310047408dfad",
                 "shasum": ""
             },
             "require": {
@@ -2104,7 +2105,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-07-09 20:36:01"
+            "time": "2015-10-12 20:08:30"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2249,16 +2250,16 @@
         },
         {
             "name": "yiisoft/yii2-authclient",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-authclient.git",
-                "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b"
+                "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
-                "reference": "cbe801a7d8bb477be15cb0fbdaa75ca5bdfeb91b",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
+                "reference": "22910bfe0000538f5b3ca1102cd3de0b5d14a0e2",
                 "shasum": ""
             },
             "require": {
@@ -2293,25 +2294,25 @@
                 "oauth",
                 "yii2"
             ],
-            "time": "2015-05-10 22:07:56"
+            "time": "2015-09-23 17:26:02"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0"
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
-                "reference": "1b6b1e61cf91c3cdd517d6a7e71d30bb212e4af0",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
+                "reference": "1464f93834b1d5edb1f5625f7ffd6c3723fa4923",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": ">=2.0.4"
+                "yiisoft/yii2": ">=2.0.6"
             },
             "type": "yii2-extension",
             "extra": {
@@ -2343,7 +2344,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-05-10 22:08:17"
+            "time": "2015-09-23 17:48:24"
         },
         {
             "name": "yiisoft/yii2-composer",

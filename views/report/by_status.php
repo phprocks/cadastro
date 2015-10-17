@@ -12,7 +12,7 @@ use app\models\Status;
 
 ?>
 <div class="row">
-<h2>Situação x Equipe Cadastro</h2>
+<h2>Situação dos chamados x Equipe Cadastro</h2>
     	<hr/>
     <div class="col-xs-6 col-md-3">
         <?php  echo $this->render('_menu'); ?>

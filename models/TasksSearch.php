@@ -19,7 +19,7 @@ class TasksSearch extends Tasks
     {
         return [
             [['id', 'user_id', 'status_id', 'typeperson_id', 'typesolicitation_id', 'location_id'], 'integer'],
-           [['created', 'updated', 'notes', 'cpf_cnpj'], 'safe'],
+           [['created', 'updated', 'closed', 'notes', 'cpf_cnpj'], 'safe'],
         ];
     }
 
@@ -69,6 +69,7 @@ class TasksSearch extends Tasks
             'id' => $this->id,
             'created' => $this->created,
             'updated' => $this->updated,
+            'closed' => $this->closed,
             'user_id' => $this->user_id,
             'status_id' => $this->status_id,
             'typeperson_id' => $this->typeperson_id,

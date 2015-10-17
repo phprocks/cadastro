@@ -36,7 +36,7 @@ class Solicitation extends \yii\db\ActiveRecord
     {
         //$myvar = 1;
         return [
-            [['created', 'updated','ip'], 'safe'],
+            [['created', 'updated', 'closed', 'ip'], 'safe'],
             [['user_id', 'status_id', 'location_id', 'typeperson_id', 'typesolicitation_id','cpf_cnpj', 'reference'], 'required', 'message' => 'Campo obrigatório!'],
             [[
             'scholarity',
@@ -74,6 +74,7 @@ class Solicitation extends \yii\db\ActiveRecord
             'id' => 'ID',
             'created' => 'Solicitado em',
             'updated' => 'Alterado em',
+            'closed' => 'Finalizado em',
             'user_id' => 'Solicitante',
             'status_id' => 'Situação',
             'location_id' => 'Local',

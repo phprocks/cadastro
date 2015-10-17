@@ -19,7 +19,7 @@ class SolicitationSearch extends Solicitation
     {
         return [
             [['id', 'user_id', 'status_id', 'location_id', 'typeperson_id', 'typesolicitation_id'], 'integer'],
-            [['created', 'updated', 'notes', 'cpf_cnpj'], 'safe'],
+            [['created', 'updated', 'closed', 'notes', 'cpf_cnpj'], 'safe'],
         ];
     }
 
@@ -59,6 +59,7 @@ class SolicitationSearch extends Solicitation
             'id' => $this->id,
             'created' => $this->created,
             'updated' => $this->updated,
+            'closed' => $this->closed,
             'user_id' => $this->user_id,
             'status_id' => $this->status_id,
             'location_id' => $this->location_id,
