@@ -32,6 +32,14 @@ $this->title = "Solicitação #".$model->id;
     </div>
     </h2>
 
+    <?php
+    // http://timeago.yarp.com/
+    // http://mattbradley.github.io/livestampjs/
+    // http://momentjs.com/
+    // how many days
+    $days = (strtotime($model->closed) - strtotime($model->created)) / (60 * 60 * 24);
+    ?>
+
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
@@ -56,7 +64,13 @@ $this->title = "Solicitação #".$model->id;
               'format' => 'raw',
               'value' => date("d/m/Y",  strtotime($model->closed)),
               'visible' => $model->closed <> null ? true : false,
-            ],                  
+            ],    
+            [ 
+              'label' => 'Duração',
+              'format' => 'raw',
+              'value' => $days." dia(s)",
+              'visible' => $model->closed <> null ? true : false,
+            ],                           
             [ 
               'label' => 'Tipo',
               'format' => 'raw',
