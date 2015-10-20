@@ -24,6 +24,9 @@ $this->title = "Solicitação #".$model->id;
     </h2>
 
     <?php
+    // http://timeago.yarp.com/
+    // http://mattbradley.github.io/livestampjs/
+    // http://momentjs.com/
     // how many days
     $days = (strtotime($model->closed) - strtotime($model->created)) / (60 * 60 * 24);
     ?>

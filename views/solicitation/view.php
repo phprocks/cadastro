@@ -70,7 +70,7 @@ $this->title = "Solicitação #".$model->id;
               'format' => 'raw',
               'value' => $days." dia(s)",
               'visible' => $model->closed <> null ? true : false,
-            ],                           
+            ],                          
             [ 
               'label' => 'Tipo',
               'format' => 'raw',
