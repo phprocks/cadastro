@@ -60,5 +60,5 @@ if (YII_ENV_DEV) {
     $config['modules']['gii'] = 'yii\gii\Module';
 }
 Yii::setAlias('@upload', realpath(dirname(__FILE__).'/../../Anexos_Apoio_Cadastro/'));
-Yii::setAlias('@open', 'http://172.19.37.4/Anexos_Apoio_Cadastro');
+Yii::setAlias('@open', 'http://10.9.37.4/Anexos_Apoio_Cadastro');
 return $config;
