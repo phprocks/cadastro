@@ -19,7 +19,7 @@
                         'url'     => ['/report/by_location'],
                     ],
                     [
-                        'label'   => 'Solicitações x Cadastrista', //grafico pizza
+                        'label'   => 'Conclusões x Cadastrista', //grafico pizza
                         'url'     => ['/report/by_analyst'],
                     ],
                     // [
