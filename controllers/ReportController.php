@@ -199,7 +199,7 @@ class ReportController extends Controller
         FROM tb_solicitation  
         INNER JOIN user
         ON tb_solicitation.analyst_id = user.id
-        WHERE MONTH(tb_solicitation.created) = $mounth")
+        WHERE MONTH(tb_solicitation.closed) = $mounth")
             ->queryScalar();
 
         $dataProvider = new SqlDataProvider([
@@ -208,7 +208,7 @@ class ReportController extends Controller
                     FROM tb_solicitation  
                     INNER JOIN user
                     ON tb_solicitation.analyst_id = user.id
-                    WHERE MONTH(tb_solicitation.created) = $mounth
+                    WHERE MONTH(tb_solicitation.closed) = $mounth
                     GROUP BY username",
                     'totalCount' => 200,
                     'sort' =>false,

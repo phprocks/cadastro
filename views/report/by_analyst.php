@@ -83,7 +83,8 @@ use app\models\Status;
 				    ],
 				    ]); ?>
 				    </div>
-				    </div>	
+				    </div>
+				    <p class="text-muted">* A partir de Novembro 2015, este relatório considera a data em que a solicitação foi concluído</p>	
     </div>
 
 </div>
