@@ -11,7 +11,6 @@ $this->title = 'Bem-vindo';
     <p>
     A ferramenta <em>APOIO CADASTRO</em> tem como objetivo auxiliar o processo de cadastro, organizando as solicitações e arquivos enviados para que a confecção do cadastro seja feita de forma adequada.
     </p>
-    <p>Assim como é feito atualmente na ferrameta <em>ANALISE</em>, o sistema é divido em 2 perfis de acesso diferentes:</p>
     
     </br>
     

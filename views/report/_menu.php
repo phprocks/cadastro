@@ -27,11 +27,11 @@
                     //     'url'     => ['/solicitation/by_analyst'],
                     // ],  
                     [
-                        'label'   => 'Situação x Equipe',
+                        'label'   => 'Situação por Período',
                         'url'     => ['/report/by_status'],
                     ],     
                     [
-                        'label'   => 'Situação x Tipo',
+                        'label'   => 'Tipo por Período',
                         'url'     => ['/report/by_type'],
                     ],                                                       
                 ],
